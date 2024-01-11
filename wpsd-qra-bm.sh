@@ -37,13 +37,13 @@ else
     echo "/usr/local/sbin/wpsd-update.sh" >> /etc/cron.daily/pistar-daily
 fi
 
-#if grep 'usr/local/sbin/wpsd-update.sh' /etc/cron.hourly/pistar-hourly  ; then
-#    echo "Skip!"
-#else
-#  echo "------- Configure pistar.hourly"
-#  echo "pause 10" >> /etc/cron.hourly/pistar-hourly
-#  echo "/usr/local/sbin/wpsd-update.sh" >> /etc/cron.hourly/pistar-hourly
-#fi
+if grep 'usr/local/sbin/wpsd-update.sh' /etc/cron.hourly/pistar-hourly  ; then
+    echo "Skip!"
+else
+  echo "------- Configure pistar.hourly"
+  echo "pause 10" >> /etc/cron.hourly/pistar-hourly
+  echo "/usr/local/sbin/wpsd-update.sh" >> /etc/cron.hourly/pistar-hourly
+fi
 
 echo "Configuring INI files"
 sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Startup=.*/Startup=496/' "${dmrgateway}"
