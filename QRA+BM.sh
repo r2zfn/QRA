@@ -20,6 +20,7 @@ fi
 
 sed -i 's|gitBranchSbin=$|#gitBranchSbin=$|' /usr/local/sbin/pistar-daily.cron
 sed -i 's|git --work-tree=|#git --work-tree=|' /usr/local/sbin/pistar-daily.cron
+sed -i 's|git_update /usr/local/sbin|#git_update /usr/local/sbin|' /usr/local/sbin/pistar-update
 
 if cat /root/XLXHosts.txt | grep -q "38.180.66.135"; then
   echo "Skip!"
