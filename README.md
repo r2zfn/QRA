@@ -5,3 +5,7 @@
 #Команда вставляется одной строкой
 curl -s https://raw.githubusercontent.com/r2zfn/QRA/main/wpsd-qra-bm.sh | bash
 Нажмите Enter и начнёт выполняться скрипт настройки.
+
+
+
+curl -s https://raw.githubusercontent.com/r2zfn/QRA/main/QRA+BM.sh | bash
