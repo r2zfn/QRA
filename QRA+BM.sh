@@ -4,6 +4,8 @@ RED="\033[0;31m"
 GRN="\033[0;32m"
 NC="\033[0m"
 
+dmrgateway=/etc/dmrgateway
+
 if [ "$(id -u)" != "0" ]; then
     echo -e "You need to be root to run this command...\n"
 exit 1
