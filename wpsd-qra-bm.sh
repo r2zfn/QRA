@@ -13,7 +13,7 @@ fi
 
 
 echo "Set rpi-rw"
-mount -o remount,rw / ; mount -o remount,rw /boot
+mount -o remount,rw /
 
 echo -e "${BULL} Stopping Cron Services. Please wait..."
 systemctl stop cron.service > /dev/null 2<&1
