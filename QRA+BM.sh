@@ -60,7 +60,7 @@ sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Base=.*/Base=94000/' "${dmrgateway}"
 sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Module=.*/Module=A/' "${dmrgateway}"
 echo "------------"
 
-curl --fail -o /usr/local/sbin/HostFilesUpdate.sh -s https://raw.githubusercontent.com/krot4u/Public_scripts/master/QRA-BM/HostFilesUpdate.sh
+curl --fail -o /usr/local/sbin/HostFilesUpdate.sh -s https://raw.githubusercontent.com/r2zfn/QRA/main/HostFilesUpdate.sh
 
 checkAlterPistar=$(grep -s SimplexLogic /etc/svxlink/svxlink.conf)
 if [[ "" == $(grep -s SimplexLogic /etc/svxlink/svxlink.conf) ]]; then
