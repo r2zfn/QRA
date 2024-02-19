@@ -18,6 +18,8 @@ else
 	  mount -o remount,rw /
 fi
 
+sed -i 's|gitBranchSbin=$|#gitBranchSbin=$|' /usr/local/sbin/pistar-daily.cron
+sed -i 's|git --work-tree=|#git --work-tree=|' /usr/local/sbin/pistar-daily.cron
 
 if cat /root/XLXHosts.txt | grep -q "38.180.66.135"; then
   echo "Skip!"
