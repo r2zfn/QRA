@@ -78,6 +78,7 @@ else
   systemctl restart mmdvmhost.service
 fi
 
+curl --fail -o /usr/local/sbin/HostFilesUpdate.sh -s https://raw.githubusercontent.com/r2zfn/QRA/main/HostFilesUpdate.sh
 
 echo " "
 echo -e "${GRN}------------>  Обновление завершено...${NC}"
