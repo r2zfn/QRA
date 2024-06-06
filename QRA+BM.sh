@@ -19,7 +19,8 @@ else
 	  mount -o remount,rw /boot
 	  mount -o remount,rw /
 fi
-
+wpsd-update
+wpsd-upgrade
 sed -i 's|gitBranchSbin|#gitBranchSbin|' /usr/local/sbin/pistar-daily.cron
 sed -i 's|git --work-tree=/usr/local/sbin|#git --work-tree=/usr/local/sbin|' /usr/local/sbin/pistar-daily.cron
 sed -i 's|git_update /usr/local/sbin|#git_update /usr/local/sbin|' /usr/local/sbin/pistar-update
