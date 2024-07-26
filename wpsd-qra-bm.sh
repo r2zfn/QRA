@@ -46,7 +46,7 @@ else
 fi
 
 echo "Configuring INI files"
-sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Startup=.*/Startup=496/' "${dmrgateway}"
+sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Startup=.*/Startup=499/' "${dmrgateway}"
 sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Enabled=.*/Enabled=1/' "${dmrgateway}"
 sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Port=.*/Port=62030/' "${dmrgateway}"
 #sed -i -E '/^\[XLX Network\]$/,/^\[/ s/^Password=.*/Password=passw0rd/' "${dmrgateway}"
