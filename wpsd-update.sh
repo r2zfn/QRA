@@ -66,11 +66,11 @@ if [ ! -f "/root/YSFHosts.txt" ]; then
 fi
 
 
-if grep '38.180.66.135' /root/XLXHosts.txt  ; then 
+if grep 'qra-team.online' /root/XLXHosts.txt  ; then 
   echo "Skip!"
 else
   echo "------- Configure XLXHosts"
-  echo "496;38.180.66.135;4001" >> /root/XLXHosts.txt
+  echo "499;qra-team.online;4001" >> /root/XLXHosts.txt
 fi
 
 
@@ -81,19 +81,19 @@ else
   echo "1	p25.qra-team.online	41000" >> /root/P25Hosts.txt
 fi
 
-if grep '38.180.66.135' /root/DMR_Hosts.txt  ; then 
+if grep 'qra-team.online' /root/DMR_Hosts.txt  ; then 
   echo "Skip!"
 else
   echo "------- Configure DMR_Hosts"
-  echo "XLX_496       0000    38.180.66.135     passw0rd        62030" >> /root/DMR_Hosts.txt
+  echo "XLX_499       0000    qra-team.online     passw0rd        62030" >> /root/DMR_Hosts.txt
 fi
 
 
-if grep '38.180.66.135' /root/YSFHosts.txt  ; then 
+if grep 'qra-team.online' /root/YSFHosts.txt  ; then 
   echo "Skip!"
 else
   echo "------- Configure YSFHosts"
-  echo "00496;XLX496;XLX-QRA;38.180.66.135;42000;004;https://qra-team.online;0" >> /root/YSFHosts.txt
+  echo "00499;XLX499;XLX-QRA;38.180.66.135;42000;004;https://qra-team.online;0" >> /root/YSFHosts.txt
 fi
 
 # Add custom XLX Hosts
